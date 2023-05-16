@@ -49,5 +49,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ${{ matrix.language }} SARIF
-        path: /home/runner/work/BenchmarkJava/results/${{ matrix.language }}.sarif"
+        path: ${{ runner.workspace }}/results/*.sarif
         
