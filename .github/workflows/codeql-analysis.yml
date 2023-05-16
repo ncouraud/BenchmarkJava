@@ -44,3 +44,9 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+      
+    - name: Upload Output
+      uses: actions/upload-artifact@v3
+      with:
+        path: /**/*.sarif
+        
